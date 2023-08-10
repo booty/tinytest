@@ -8,6 +8,14 @@ This is just a toy project. Don't take it seriously.
 
 ## Usage
 
+Reference this Github repo directly from your `Gemfile`.
+
+I'm not pushing this to RubyGems.org because it's a toy personal project and it would be poor form to junk up RubyGems.
+
+```ruby
+gem "tinytest", github: "booty/tinytest"
+```
+
 Define some tests in `myfile.rb`:
 
 ```ruby
@@ -30,6 +38,8 @@ class DoSomeTests
     )
   end
 
+  # Method names will be used as headers/separators
+  # in the output
   def test_something_else
     assert(
       (1 == 2),               # a thing that should be true
@@ -52,7 +62,7 @@ Sample output:
   👍 value set correctly
   👍 conversion works
 
-----[ test_initialize ]----
+----[ test_something_else ]----
   🚫 this will fail
 
 ----[ RESULTS ]----

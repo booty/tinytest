@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.email       = "johnedmundrose@gmail.com"
   s.files       = ["lib/tinytest.rb"]
   s.homepage    =
-    "https://rubygems.org/gems/tinytest"
+    "https://github.com/booty/tinytest"
   s.license = "MIT"
   s.metadata["rubygems_mfa_required"] = "true"
 end
